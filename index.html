@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+        <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+        <!-- FIM Bootstrap Icons CSS -->
+
+        <!-- Fonte GoogleFonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <!-- FIM Fonte GoogleFonts -->
+
+        <!-- Link para o arquivo CSS externo -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--FIM Link para o arquivo CSS externo-->
+
+
+    <title>SIM-ALFRED</title>
+</head>
+
+<body>
+    <!-- Central de Agendamento - Acess user -->
+    <section class ="main-container-agend">
+        <div class ="acess-user flex-column">
+            <div class="flex-column flex-center">
+                <img src="imgs/logo-prefeitura.png" alt="Logo hospital municipal Veterinário" style="height:200px;width:350px;">
+                <p>Central de Agendamento</p>
+            </div>
+
+                <form  class="form-user flex-column">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name=""cpf placeholder="Digite o CPF (Somente números)" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite a senha">
+
+                    <div class="btns-acess">
+                        <button class="btn-acess"><i class="bi bi-door-open-fill"></i>Entrar</button>
+                        <button class="btn-acess"><i class="bi bi-person-fill"></i>Cadastrar</button>
+                    </div>
+                </form>
+
+                <div class="img-patrocinadores flex-alinhado">
+                    <img src="imgs/logo-sim-alfred.png" alt="SIM Alfred" style="height:30px;width: 110px;">
+                    <img src="imgs/logo-instituto-transformar.png" alt="Instituto Transformar" style="height:50px;width: 150px;">
+                </div><!--FIM img-patrocinadores-->
+        </div><!--acess-user flex-column-->
+    </section><!--main-container-agend->
+
+</body>
+
+</html>
