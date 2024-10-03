@@ -20,10 +20,12 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --green: rgba(160, 241, 160, 0.616);
 
     --font-family-poppins: 'Poppins', sans-serif;
 }
-/* ----- Regra Geral----- */
+/* ----- REGRA GERAL----- */
+
 *{
     margin:0px;
     padding:0px;
@@ -50,12 +52,28 @@
     display:flex;
     align-items: center;
 }
+
 body{
     background-color: var(--light);
 }
+
+nav ul {
+    list-style-type: none;
+}
+
+.flex-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+.gap-trinta{
+   gap:30px;
+}
+
 /* ----- Fim Regra Geral ---*/
 
-/* ------- Central de Agendamento - Acess user -----*/
+/* ----------------------------------------- */
+/* ------- CENTRAL DE ATENDIMENTO - Acess user -----*/
 section.main-container-agend{
     display:flex;
     justify-content: center;
@@ -128,4 +146,210 @@ div.acess-user label{
 .img-patrocinadores{
     margin-top:25px;
     gap:10px;
+}
+
+/* ------ PÁGINA HOME ------- */
+/* Barra lateral */
+.sidebar {
+    background-color: rgba(162, 185, 190, 0.192);
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */  
+}
+
+aside .logo-sim img {
+    margin-bottom: 30px;
+}
+
+nav ul .menu-item {
+    background-color: rgba(0, 0, 255, 0.068);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+}
+
+nav ul .menu-item i{
+    margin-right: 5px;
+    font-size:20px;
+}
+
+.submenu {
+    display: none;
+    /* flex-direction: column; */
+    padding-left: 10px;
+}
+
+.submenu li{
+    margin:10px;
+}
+
+.submenu-toggle{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* ---- HEADER ----*/
+header {
+    margin-left: 250px;
+    width: 82%;
+    background-color: #fefeff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #f8f9fa;
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    /* left: 0; */
+    /* right: 0; */
+    /* z-index: 1000; */
+}
+
+header i{
+    margin-right: 15px;
+    font-size:35px;
+    cursor:pointer;
+}
+
+/* ------- CONTEUDO PRINCIPAL -------- */
+
+
+main.content {
+    display: flex;
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+    position:relative;
+    top: -525px; /* Para ficar abaixo do header*/
+    
+    
+}
+
+/* Coluna esquerda */
+.left-column {
+    width: 50%;
+    margin-right:70px;
+}
+
+.info-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+.color-green {
+    background-color: rgba(160, 241, 160, 0.616);
+
+}
+
+/* ----- Coluna Direita ----- */
+.right-column {
+    width: 25%;
+}
+
+.card {
+    background-color: var(--cyan);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color:var(--white);
+    cursor:pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card h2{
+    color:black;
+}
+
+.icon-background {
+    position: absolute;
+    bottom: 0;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move para o centro absoluto */
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; 
+    transition: transform 0.5s ease; 
+}
+
+.img-tutor{
+    background-image: url('../imgs/person-fill.svg');
+}
+
+.img-pet{
+    background-image: url('../imgs/pet.svg');
+}
+
+.img-gerenciamento{
+    background-image: url('../imgs/calendar.svg');
+}
+
+
+.card:hover .icon-background {
+    transform: translate(-50%, -50%) scale(1.2); 
+    opacity: 0.2; 
+}
+
+
+/* Central de Agendamento Info.Tutor */
+.info-container div .titulo-central{
+    font-family: var(--font-family-poppins);
+    font-size:20px;
+}
+
+.info-container div p{
+    margin-bottom:5px;
+    text-align: justify;
+    padding:10px;
+    font-size:15px;
+}
+
+
+.paws{
+    margin-bottom:20px;
+}
+
+.btn-info-tutor button{
+    background-color: var(--dark);
+    border:none;
+    color: var(--white);
+    width: 60%;
+    padding:5px;
+    padding-left:10px;
+    padding-right:15px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    cursor:pointer;
+}
+
+.btn-info-tutor button i{
+    color:Var(--red);
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.titulo-info-dog i{
+    color:var(--red);
+
+}
+
+.body-info-dog i{
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+    margin-right: 4px; /* Espaçamento entre o ícone e o texto */
+    font-size: 20px; /* Ajuste o tamanho do ícone se necessário */
 }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap Icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!--Fim Boostrap Icons-->
+
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- FIM Google Icons -->
+    
+    <!--Conexão CSS-->
+    <link rel="stylesheet" href="../Css/styles.css">
+    
+    <!--Fim conexão CSS-->
+    <title>Hospital veterinário Slz</title>
+
+
+</head>
+
+
+<body>
+    <!-- Barra lateral -->
+    <aside class="sidebar"> <!--Barra lateral-->
+        <div class="logo-sim">
+            <img src="/imgs/logo-sim-alfred.png" alt="Logo SIM-Alfred">
+        </div><!--Logo-SIM-->
+        
+        <nav>
+            <ul>
+                <li class="menu-item">
+                    <i class="bi bi-house-fill"></i>
+                    <span>Início</span>
+                </li>
+                <li class="menu-item submenu-toggle">
+                    <div class ="flex-center">
+                        <i class="material-symbols-outlined">pets</i>
+                        <span>Veterinário</span>
+                    </div>
+                    <div class="flex-center">
+                        <i class="material-symbols-outlined">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="submenu">
+                        <li><i class="bi bi-person-fill"></i> Meus Dados Tutor</li>
+                        <li><i class="material-symbols-outlined">
+                            sound_detection_dog_barking</i>Meus Pets</li>
+                        <li><i class="bi bi-calendar-fill"></i> Agendamento</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </aside><!--sidebar-->
+
+    <!-- ----- HEADER------ -->
+    <header class="flex-between">
+        <div class="flex-center">
+            <i class="bi bi-list"></i>
+            <p>HMV-SLZ</p>
+        </div>
+        
+        <div class="flex-center">
+            <i class="bi bi-person-circle"></i>
+            <p>Olá, usuário</p>
+        </div>
+        
+    </header>
+
+    <!-- CONTEUDO PRINCIPAL -->
+    <main class="content">
+        <div class="left-column">
+            <div class="info-container">
+                <div class="flex-center flex-column">
+                    <img src="../imgs/logo-prefeitura.png" alt="Logo prefeitura" width= 300px;>
+                    <p class="titulo-central">Central de Agendamento</p>
+
+                    <p>Seu cadastro como tutor já foi realizado. Agora realize o(s) cadastro(s) do(s) seu(s) Pet(s) clicando no botão "Meus Pets".
+                    Após isso, clique no botão "Meus Agendamentos" para visualizar os dias e vagas disponíveis para agendamento.</p>
+                </div>
+                <div class="paws flex-center">
+                    <i class="material-symbols-outlined">pets</i>
+                    <i class="material-symbols-outlined">pets</i>
+                    <i class="material-symbols-outlined">pets</i>
+                </div>
+                <div class=" btn-info-tutor flex-center">
+                    <button class="flex-center">
+                        <i class="material-symbols-outlined">person</i>
+                        Clique aqui para saber sobre o Tutor
+                    </button>
+                    
+                </div>
+            </div><!--info-container-->
+
+            <div class="info-container color-green">
+                <div class="titulo-info-dog flex-center">
+                    <i class="material-symbols-outlined">
+                        warning</i>
+                    <p><strong>ABANDONAR ANIMAIS É CRIME!</strong></p>
+                    <i class="material-symbols-outlined">sound_detection_dog_barking</i>
+                </div><!--titulo-info-dog-->
+
+                <div class="body-info-dog">
+                    <p><i class="material-symbols-outlined">pets</i>O crime de abandono e maus tratos de animais é regido pela Lei de Crimes Ambientais (Lei nº 9.605/1998). É crime abandonar, ferir, mutilar ou maltratar animais domésticos ou silvestres e a lei prevê 2 a 5 anos de reclusão para quem o pratica.</p>
+                    <p><i class="material-symbols-outlined">pets</i>Portanto, é estritamente proibido e repudiado qualquer tipo de Abandono e Maus Tratos de Animais nas instalações e redondezas do Hospital Municipal Veterinário, passível de denuncia e/ou prisão em flagrante pelos órgãos competentes.</p>
+                    <p><i class="material-symbols-outlined">pets</i>Desta forma, todo animal cadastrado em seu CPF está sob sua responsabilidade e cuidados. Em casos de internação é obrigatório a retirada do seu Pet após a alta médica dentro do prazo determinado pelo HMV-SLZ.</p>
+                </div>
+               
+            </div><!--info-container-->
+
+            <div class="info-container flex-center gap-trinta">
+                <img src="../imgs/logo-sim-alfred.png" alt="Logo SIM Alfred" width="100px">
+                <img src="../imgs/logo-instituto-transformar.png" alt="Logo Instituto Transformar" width="150">
+            </div><!--info-container-->
+        </div>
+
+        <div class="right-column">
+            <div class="card">
+                    <div class="flex-center">
+                        <h2>Meus Dados (Tutor)</h2>
+                    </div>
+                    <div class="flex-center">
+                        <p>Clique aqui para manter os dados do tutor atualizados.</p>
+                    </div>
+                    <div class="icon-background img-tutor"></div>
+            </div><!--card 1-->
+
+            <div class="card">
+                <div class="flex-center">
+                    <h2>Meu(s) Pet(s)</h2>
+                </div>
+                <div class="flex-center">
+                    <p>Clique aqui para atualizar os dados do(s) seu(s) Pet(s).</p> 
+                </div>
+                <div class="icon-background img-pet"></div>
+            </div><!--card 2-->
+
+            <div class="card">
+                <div class="flex-center">
+                    <h2>Meus Gerenciamentos</h2>
+                </div>
+                <div class="flex-center">
+                    <p>Clique para gerenciar os seus Agendamentos.</p>
+                </div>
+                <div class="icon-background img-gerenciamento"></div>
+            </div><!--card 3-->
+        </div>
+    </main>
+
+
+</body>
+
+
+</html>
