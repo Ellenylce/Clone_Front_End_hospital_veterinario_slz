@@ -72,8 +72,9 @@ nav ul {
 
 /* ----- Fim Regra Geral ---*/
 
-/* ----------------------------------------- */
-/* ------- CENTRAL DE ATENDIMENTO - Acess user -----*/
+/* ------------------------------------------------------------------------- */
+
+/* ------- PÁGINA CENTRAL DE ATENDIMENTO - ACESS USER -----*/
 section.main-container-agend{
     display:flex;
     justify-content: center;
@@ -147,9 +148,12 @@ div.acess-user label{
     margin-top:25px;
     gap:10px;
 }
+/*------ FIM PÁGINA ACESSO USER ----*/
 
+/* ---------------------------------------------------- */
 /* ------ PÁGINA HOME ------- */
-/* Barra lateral */
+
+/*-----BARRA LATERAL --- */
 .sidebar {
     background-color: rgba(162, 185, 190, 0.192);
     height: 100vh;
@@ -216,9 +220,8 @@ header i{
     cursor:pointer;
 }
 
+
 /* ------- CONTEUDO PRINCIPAL -------- */
-
-
 main.content {
     display: flex;
     margin-left: 250px;
@@ -226,8 +229,6 @@ main.content {
     width: 100%;
     position:relative;
     top: -525px; /* Para ficar abaixo do header*/
-    
-    
 }
 
 /* Coluna esquerda */
@@ -236,6 +237,7 @@ main.content {
     margin-right:70px;
 }
 
+/*------- CENTRAL DE AGENDAMENTO (INFO.TUTOR)------- */
 .info-container {
     background-color: #fff;
     padding: 20px;
@@ -243,68 +245,7 @@ main.content {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
 }
-.color-green {
-    background-color: rgba(160, 241, 160, 0.616);
 
-}
-
-/* ----- Coluna Direita ----- */
-.right-column {
-    width: 25%;
-}
-
-.card {
-    background-color: var(--cyan);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    color:var(--white);
-    cursor:pointer;
-    text-align: center;
-    font-weight: bold;
-}
-
-.card h2{
-    color:black;
-}
-
-.icon-background {
-    position: absolute;
-    bottom: 0;
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Move para o centro absoluto */
-    width: 70px;
-    height: 70px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.2; 
-    transition: transform 0.5s ease; 
-}
-
-.img-tutor{
-    background-image: url('../imgs/person-fill.svg');
-}
-
-.img-pet{
-    background-image: url('../imgs/pet.svg');
-}
-
-.img-gerenciamento{
-    background-image: url('../imgs/calendar.svg');
-}
-
-
-.card:hover .icon-background {
-    transform: translate(-50%, -50%) scale(1.2); 
-    opacity: 0.2; 
-}
-
-
-/* Central de Agendamento Info.Tutor */
 .info-container div .titulo-central{
     font-family: var(--font-family-poppins);
     font-size:20px;
@@ -353,3 +294,50 @@ main.content {
     margin-right: 4px; /* Espaçamento entre o ícone e o texto */
     font-size: 20px; /* Ajuste o tamanho do ícone se necessário */
 }
+/* -----FIM SECTION CENTRO DE AGENDAMENTO (INFO.TUTOR)----- */
+
+
+/* -------- SECTION ABANDONO DE ANIMAIS------- */
+.color-green {
+    background-color: rgba(160, 241, 160, 0.616);
+}
+/* -------- FIM SECTION ABANDONO DE ANIMAIS------- */
+
+
+/* ----- Coluna Direita ----- */
+.right-column {
+    width: 25%;
+}
+
+.card {
+    background-color: rgb(5, 121, 129);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+    position: relative;
+    color:var(--white);
+    cursor:pointer;
+    text-align: center;
+    
+}
+
+.card h2{
+    font-size:16px;
+    font-weight: bold;
+    Color:var(--white);
+    margin-bottom: 10px;
+}
+
+.card i{
+    font-size:40px;
+    color: var(--white);
+}
+   
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 28px #ffffff6e;
+    
+}
+
+

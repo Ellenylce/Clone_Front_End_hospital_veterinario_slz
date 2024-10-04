@@ -20,7 +20,6 @@
 
 </head>
 
-
 <body>
     <!-- Barra lateral -->
     <aside class="sidebar"> <!--Barra lateral-->
@@ -65,17 +64,18 @@
             <i class="bi bi-person-circle"></i>
             <p>Olá, usuário</p>
         </div>
-        
     </header>
+    <!-- ----- FIM HEADER------ -->
 
-    <!-- CONTEUDO PRINCIPAL -->
+    <!-- Conteudo Principal -->
     <main class="content">
         <div class="left-column">
-            <div class="info-container">
+
+            <!-- CENTRAL DE ATENDIMENTO (INFO.TUTOR) -->
+            <section class="info-container">
                 <div class="flex-center flex-column">
                     <img src="../imgs/logo-prefeitura.png" alt="Logo prefeitura" width= 300px;>
                     <p class="titulo-central">Central de Agendamento</p>
-
                     <p>Seu cadastro como tutor já foi realizado. Agora realize o(s) cadastro(s) do(s) seu(s) Pet(s) clicando no botão "Meus Pets".
                     Após isso, clique no botão "Meus Agendamentos" para visualizar os dias e vagas disponíveis para agendamento.</p>
                 </div>
@@ -89,44 +89,48 @@
                         <i class="material-symbols-outlined">person</i>
                         Clique aqui para saber sobre o Tutor
                     </button>
-                    
                 </div>
-            </div><!--info-container-->
+            </section><!--info-container-->
+            <!-- FIM CENTRAL DE ATENDIMENTO (INFO.TUTOR) -->
 
-            <div class="info-container color-green">
+            <!-------- SECTION ABANDONO DE ANIMAIS------->
+            <section class="info-container color-green">
                 <div class="titulo-info-dog flex-center">
-                    <i class="material-symbols-outlined">
-                        warning</i>
+                    <i class="bi bi-exclamation-triangle-fill"></i>
                     <p><strong>ABANDONAR ANIMAIS É CRIME!</strong></p>
-                    <i class="material-symbols-outlined">sound_detection_dog_barking</i>
+                    <span><img src="../imgs/pet.png" alt="dog-red" width="20px;"></span>
                 </div><!--titulo-info-dog-->
 
-                <div class="body-info-dog">
+                <div>
                     <p><i class="material-symbols-outlined">pets</i>O crime de abandono e maus tratos de animais é regido pela Lei de Crimes Ambientais (Lei nº 9.605/1998). É crime abandonar, ferir, mutilar ou maltratar animais domésticos ou silvestres e a lei prevê 2 a 5 anos de reclusão para quem o pratica.</p>
                     <p><i class="material-symbols-outlined">pets</i>Portanto, é estritamente proibido e repudiado qualquer tipo de Abandono e Maus Tratos de Animais nas instalações e redondezas do Hospital Municipal Veterinário, passível de denuncia e/ou prisão em flagrante pelos órgãos competentes.</p>
                     <p><i class="material-symbols-outlined">pets</i>Desta forma, todo animal cadastrado em seu CPF está sob sua responsabilidade e cuidados. Em casos de internação é obrigatório a retirada do seu Pet após a alta médica dentro do prazo determinado pelo HMV-SLZ.</p>
                 </div>
-               
-            </div><!--info-container-->
+            </section><!--info-container color-green-->
+            <!-- FIM SECTION ABANDONO DE ANIMAIS -->
 
-            <div class="info-container flex-center gap-trinta">
+            <!-- SECTION LOGOS PATROCINIOS -->
+            <section class="info-container flex-center gap-trinta">
                 <img src="../imgs/logo-sim-alfred.png" alt="Logo SIM Alfred" width="100px">
                 <img src="../imgs/logo-instituto-transformar.png" alt="Logo Instituto Transformar" width="150">
-            </div><!--info-container-->
-        </div>
+            </section><!--info-container flex-center gap-trinta-->
+        </div><!--Left Column-->
 
+        <!-- Coluna Direita -->
         <div class="right-column">
+            <!-- CARDS BTNS INFORMATIVOS -->
             <div class="card">
-                    <div class="flex-center">
-                        <h2>Meus Dados (Tutor)</h2>
-                    </div>
-                    <div class="flex-center">
-                        <p>Clique aqui para manter os dados do tutor atualizados.</p>
-                    </div>
-                    <div class="icon-background img-tutor"></div>
-            </div><!--card 1-->
+                <i class="bi bi-person-fill"></i>
+                <div class="flex-center">
+                    <h2>Meus Dados (Tutor)</h2>
+                </div>
+                <div class="flex-center">
+                    <p>Clique aqui para manter os dados do tutor atualizados.</p>
+                </div>
+            </div><!--card tutor-->
 
             <div class="card">
+                <img src="../imgs/pet-white.png" alt="" width="40px;">
                 <div class="flex-center">
                     <h2>Meu(s) Pet(s)</h2>
                 </div>
@@ -134,18 +138,20 @@
                     <p>Clique aqui para atualizar os dados do(s) seu(s) Pet(s).</p> 
                 </div>
                 <div class="icon-background img-pet"></div>
-            </div><!--card 2-->
+            </div><!--card Pets-->
 
             <div class="card">
+                <i class="material-symbols-outlined">calendar_month</i>
                 <div class="flex-center">
-                    <h2>Meus Gerenciamentos</h2>
+                    <h2>Meus Agendamentos</h2>
                 </div>
                 <div class="flex-center">
                     <p>Clique para gerenciar os seus Agendamentos.</p>
                 </div>
                 <div class="icon-background img-gerenciamento"></div>
-            </div><!--card 3-->
-        </div>
+            </div><!--card Agendamentos-->
+            <!-- FIM CARDS BTNS INFORMATIVOS -->
+        </div><!--Right Column-->
     </main>
 
 
