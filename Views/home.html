@@ -31,21 +31,26 @@
             <ul>
                 <li class="menu-item">
                     <i class="bi bi-house-fill"></i>
-                    <span>Início</span>
+                    <span style="font-weight: bold;">Início</span>
                 </li>
-                <li class="menu-item submenu-toggle">
-                    <div class ="flex-center">
+                <li class="menu-item  flex-column">
+                    <div class=" submenu-toggle flex-center flex-start">
+                        <div class="flex-center">
                         <i class="material-symbols-outlined">pets</i>
-                        <span>Veterinário</span>
-                    </div>
-                    <div class="flex-center">
+                        <span style="font-weight: bold;">Veterinário</span>
+                        </div><!--flex-center-->
+
+                        <div><!--arrow-->
                         <i class="material-symbols-outlined">keyboard_arrow_down</i>
+                        </div><!--arrow-->
                     </div>
+                    
                     <ul class="submenu">
-                        <li><i class="bi bi-person-fill"></i> Meus Dados Tutor</li>
+                        <li><i class="bi bi-person-fill"></i> Meus Dados (Tutor)</li>
+                        <li><img src="../imgs/pet-aside.png" alt="" width="20px"; style="margin-right:5px;">Meus Pets</li>
                         <li><i class="material-symbols-outlined">
-                            sound_detection_dog_barking</i>Meus Pets</li>
-                        <li><i class="bi bi-calendar-fill"></i> Agendamento</li>
+                            calendar_month
+                        </i>Agendamento</li>
                     </ul>
                 </li>
             </ul>
@@ -96,13 +101,19 @@
             <!-------- SECTION ABANDONO DE ANIMAIS------->
             <section class="info-container color-green">
                 <div class="titulo-info-dog flex-center">
-                    <i class="bi bi-exclamation-triangle-fill"></i>
-                    <p><strong>ABANDONAR ANIMAIS É CRIME!</strong></p>
-                    <span><img src="../imgs/pet.png" alt="dog-red" width="20px;"></span>
+                    
+                    <p>
+                        <strong>
+                          <i class="bi bi-exclamation-triangle-fill"></i>ABANDONAR ANIMAIS É CRIME!
+                        </strong>
+                            <img src="../imgs/pet.png" alt="dog-red" width="20px;">
+                    </p>
+                    
                 </div><!--titulo-info-dog-->
 
-                <div>
+                <div class="body-info-dog">
                     <p><i class="material-symbols-outlined">pets</i>O crime de abandono e maus tratos de animais é regido pela Lei de Crimes Ambientais (Lei nº 9.605/1998). É crime abandonar, ferir, mutilar ou maltratar animais domésticos ou silvestres e a lei prevê 2 a 5 anos de reclusão para quem o pratica.</p>
+
                     <p><i class="material-symbols-outlined">pets</i>Portanto, é estritamente proibido e repudiado qualquer tipo de Abandono e Maus Tratos de Animais nas instalações e redondezas do Hospital Municipal Veterinário, passível de denuncia e/ou prisão em flagrante pelos órgãos competentes.</p>
                     <p><i class="material-symbols-outlined">pets</i>Desta forma, todo animal cadastrado em seu CPF está sob sua responsabilidade e cuidados. Em casos de internação é obrigatório a retirada do seu Pet após a alta médica dentro do prazo determinado pelo HMV-SLZ.</p>
                 </div>

@@ -31,6 +31,10 @@
     padding:0px;
     box-sizing: border-box;
 }
+.flex-justify-start{
+    display:flex;
+    justify-content: flex-start;;
+}
 
 .flex-column{
     display:flex;
@@ -153,15 +157,17 @@ div.acess-user label{
 /* ---------------------------------------------------- */
 /* ------ PÁGINA HOME ------- */
 
-/*-----BARRA LATERAL --- */
+/*-----BARRA LATERAL - Aside --- */
 .sidebar {
     background-color: rgba(162, 185, 190, 0.192);
     height: 100vh;
     width: 250px;
     padding: 20px;
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */  
+    left: 0;  
+    font-family: var(--font-family-poppins);
+    color:rgba(19, 46, 95, 0.87);
 }
 
 aside .logo-sim img {
@@ -169,29 +175,31 @@ aside .logo-sim img {
 }
 
 nav ul .menu-item {
-    background-color: rgba(0, 0, 255, 0.068);
+    background-color: rgba(0, 0, 255, 0.09);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     margin-bottom: 10px;
     padding: 15px;
     cursor: pointer;
-    /* display: flex;
-    align-items: center; */
+    width: 105%;
 }
 
 nav ul .menu-item i{
     margin-right: 5px;
     font-size:20px;
+    color:rgba(19, 46, 95, 0.87);
 }
 
 .submenu {
     display: none;
-    /* flex-direction: column; */
+    flex-direction: column;
     padding-left: 10px;
 }
 
 .submenu li{
-    margin:10px;
+    display: flex;
+    align-items: center;
+
 }
 
 .submenu-toggle{
@@ -202,16 +210,12 @@ nav ul .menu-item i{
 /* ---- HEADER ----*/
 header {
     margin-left: 250px;
-    width: 82%;
     background-color: #fefeff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     background-color: #f8f9fa;
     padding: 20px;
-    position: fixed; 
-    top: 0;
-    /* left: 0; */
-    /* right: 0; */
-    /* z-index: 1000; */
+    font-family: var(--font-family-poppins);
+
 }
 
 header i{
@@ -224,17 +228,18 @@ header i{
 /* ------- CONTEUDO PRINCIPAL -------- */
 main.content {
     display: flex;
-    margin-left: 250px;
+    margin-top: 20px; 
+    margin-left: 250px; 
     padding: 20px;
-    width: 100%;
-    position:relative;
-    top: -525px; /* Para ficar abaixo do header*/
+    width: calc(100% - 250px); /* Ajuste da largura */
+    min-height: calc(100vh - 80px); /* Para preencher a tela e evitar rolagem desnecessária */
 }
 
 /* Coluna esquerda */
 .left-column {
-    width: 50%;
-    margin-right:70px;
+    width: 65%;
+    margin-right: 40px;
+    font-family: var(--font-family-poppins);
 }
 
 /*------- CENTRAL DE AGENDAMENTO (INFO.TUTOR)------- */
@@ -252,12 +257,12 @@ main.content {
 }
 
 .info-container div p{
-    margin-bottom:5px;
+    margin-bottom:10px;
     text-align: justify;
     padding:10px;
     font-size:15px;
+    line-height: 1.6;
 }
-
 
 .paws{
     margin-bottom:20px;
@@ -265,34 +270,28 @@ main.content {
 
 .btn-info-tutor button{
     background-color: var(--dark);
-    border:none;
+    border: none;
     color: var(--white);
     width: 60%;
-    padding:5px;
-    padding-left:10px;
-    padding-right:15px;
-    border-top-left-radius:20px;
-    border-bottom-left-radius:20px;
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
-    cursor:pointer;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn-info-tutor button i{
-    color:Var(--red);
+    color:var(--red);
     font-size: 25px;
     margin-right: 10px;
 }
 
 .titulo-info-dog i{
     color:var(--red);
-
 }
 
 .body-info-dog i{
-    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
-    margin-right: 4px; /* Espaçamento entre o ícone e o texto */
-    font-size: 20px; /* Ajuste o tamanho do ícone se necessário */
+    vertical-align:middle; /* Alinha o ícone verticalmente com o texto */
+    margin-right: 5px; 
+    font-size: 22px;
 }
 /* -----FIM SECTION CENTRO DE AGENDAMENTO (INFO.TUTOR)----- */
 
@@ -301,12 +300,25 @@ main.content {
 .color-green {
     background-color: rgba(160, 241, 160, 0.616);
 }
+
+.titulo-info-dog i{
+    margin-right: 15px;
+    font-size:20px;
+}
+.titulo-info-dog img{
+    margin-left: 15px;
+    width:22px;
+    height: 20px;
+
+}
+
 /* -------- FIM SECTION ABANDONO DE ANIMAIS------- */
 
 
 /* ----- Coluna Direita ----- */
 .right-column {
-    width: 25%;
+    width: 40%;
+    font-family: var(--font-family-poppins);
 }
 
 .card {
@@ -315,7 +327,6 @@ main.content {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
-    position: relative;
     color:var(--white);
     cursor:pointer;
     text-align: center;
@@ -333,7 +344,10 @@ main.content {
     font-size:40px;
     color: var(--white);
 }
-   
+
+.card p{
+    font-size: 15px;
+}
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 0 28px #ffffff6e;
