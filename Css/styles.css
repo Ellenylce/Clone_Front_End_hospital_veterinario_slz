@@ -8,18 +8,18 @@
     --yellow: #ffc107;
     --green: #28a745;
     --teal: #20c997;
-    --cyan: #17a2b8;
+    --btn: #17a2b8;
     --white: #ffffff;
     --gray: #6c757d;
     --gray-dark: #343a40;
     --primary: #007bff;
     --secondary: #6c757d;
     --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
+    --title: rgb(6, 81, 83);
+    --warning: #ffc10731;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #000;
     --green: rgba(160, 241, 160, 0.616);
 
     --font-family-poppins: 'Poppins', sans-serif;
@@ -57,6 +57,16 @@
     align-items: center;
 }
 
+.flex-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex-around{
+    display:flex;
+    justify-content: space-around;
+}
+
 body{
     background-color: var(--light);
 }
@@ -65,13 +75,59 @@ nav ul {
     list-style-type: none;
 }
 
-.flex-between{
-    display:flex;
-    justify-content: space-between;
+a{
+    color: var(--cyan);
+    text-decoration:none;
 }
 
 .gap-trinta{
    gap:30px;
+}
+
+
+.width-full{
+    width: 100%;
+}
+
+.btns{
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    width: 100px;
+    font-size:15px;
+    color: var(--white);
+    background-color: var(--btn);
+    cursor:pointer;
+}
+
+.title{
+   color: var(--title);
+   font-size:22px;
+}
+
+.label{
+    /* font-weight: bold; */
+    font-size: 18px;
+    margin-bottom:10px;
+}
+
+.required{
+    color: var(--danger);
+}
+
+.medium-input{
+    width: 280px;
+    padding:10px 20px;
+    border-radius:30px;
+    border:none;
+    margin-bottom:20px;
+}
+.short-input{
+    width:205px;
+    padding:10px 20px;
+    border-radius:30px;
+    border:none;
+    margin-bottom:20px;
 }
 
 /* ----- Fim Regra Geral ---*/
@@ -210,11 +266,12 @@ nav ul .menu-item i{
 /* ---- HEADER ----*/
 header {
     margin-left: 250px;
-    background-color: #fefeff;
+    /* background-color: #fefeff; */
+    background-color: rgba(162, 185, 190, 0.192);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    background-color: #f8f9fa;
     padding: 20px;
     font-family: var(--font-family-poppins);
+    color:var(--title);
 
 }
 
@@ -354,4 +411,62 @@ main.content {
     
 }
 
+/* -----PÁGINA: MEUS DADOS (TUTOR)------ */
+.main-tutor{
+    margin-left: 260px; 
+    min-height: calc(100vh - 80px); /* Para preencher a tela e evitar rolagem desnecessária */
+}
 
+section.content-tutor{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.09);
+    border-radius:20px;
+}
+
+.top-content-tutor{
+    margin-bottom:40px;
+}
+.div-body-tutor{
+    width: 71%;
+}
+
+.div-bottom-body-tutor{
+    width: 62%;
+    margin-top:25px;
+}
+
+.tips i{
+    color: var(--red);
+}
+
+.tips{
+    border:none;
+    padding:5px 25px;
+    border-radius:30px;
+    background-color: var(--dark);
+    color:var(--light);
+    cursor:pointer;
+}
+
+section.content-tips{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--warning);
+    border-radius:20px;
+}
+
+section.content-tips h4 i{
+    color: var(--red);
+}
+
+section.content-tips span{
+    text-decoration: underline;
+}
