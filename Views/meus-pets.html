@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap Icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!--Fim Boostrap Icons-->
+
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- FIM Google Icons -->
+    
+    <!--Conexão CSS-->
+    <link rel="stylesheet" href="../Css/styles.css">
+    
+    <!--Fim conexão CSS-->
+    <title>Hospital veterinário Slz</title>
+
+
+</head>
+
+<body>
+    <!-- Barra lateral -->
+    <aside class="sidebar"> <!--Barra lateral-->
+        <div class="logo-sim">
+            <img src="/imgs/logo-sim-alfred.png" alt="Logo SIM-Alfred">
+        </div><!--Logo-SIM-->
+        
+        <nav>
+            <ul>
+                <li class="menu-item">
+                    <i class="bi bi-house-fill"></i>
+                    <span style="font-weight: bold;">
+                        <a href="/Views/">Ínicio</a>
+                    </span>
+                </li>
+                <li class="menu-item  flex-column">
+                    <div class=" submenu-toggle flex-center flex-start">
+                        <div class="flex-center">
+                        <i class="material-symbols-outlined">pets</i>
+                        <span style="font-weight: bold;">Veterinário</span>
+                        </div><!--flex-center-->
+
+                        <div><!--arrow-->
+                        <i class="material-symbols-outlined">keyboard_arrow_down</i>
+                        </div><!--arrow-->
+                    </div>
+                    
+                    <ul class="submenu">
+                        <li><i class="bi bi-person-fill"></i> Meus Dados (Tutor)</li>
+                        <li><img src="../imgs/pet-aside.png" alt="" width="20px"; style="margin-right:5px;">Meus Pets</li>
+                        <li><i class="material-symbols-outlined">
+                            calendar_month
+                        </i>Agendamento</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </aside><!--sidebar-->
+
+    <!-- ----- HEADER------ -->
+    <header class="flex-between">
+        <div class="flex-center">
+            <i class="bi bi-list"></i>
+            <p>HMV-SLZ</p>
+        </div>
+        
+        <div class="flex-center">
+            <i class="bi bi-person-circle"></i>
+            <p>Olá, usuário</p>
+        </div>
+    </header>
+    <!-- ----- FIM HEADER------ -->
+
+    <!-- Conteudo Principal -->
+    <main class="main-meus-pets">
+        <section class=" content-meus-pets flex-column">
+            <div class="top-content-meus-pets">
+                <div class="flex-between flex-center">
+                    <h3 class="title-meus-pets">
+                        <img src="../imgs/pet-aside.png" alt="">
+                        Meus Pets
+                    </h3>
+                    <div >
+                        <button class="btns ">Início</button>
+                        <button class="btns ">Novo</button>
+                    </div> 
+                </div><!--flex-between flex-center-->
+            </div><!--top-content-meus-pets width-full-->
+            </br>
+            <div class="body-content-meus-pets">
+                <p> Nome do Tutor</p>
+                <input type="text" class="medium-input" readonly>
+                </br>
+                <table class="table-pets ">
+                    <tr>
+                        <th style="width: 92%;">Dados dos meus Pets</th >
+                        <th class="flex-center">Ação</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>
+                                <strong class="flex-alinhado">
+                                    <i class="material-symbols-outlined">
+                                        pets
+                                    </i>
+                                    NOME ANIMAL</strong>
+                            </h4>
+                            <p>Tipo - Raça- Porte - Sexo</p>
+                        </td>
+                        <td class="flex-center" style="height: 70px;"><i class="bi bi-pencil-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>
+                                <strong class="flex-alinhado">
+                                    <i class="material-symbols-outlined">
+                                    pets
+                                    </i>
+                                    NOME ANIMAL</strong></h4>
+                            <p>Tipo - Raça- Porte - Sexo</p>
+                        </td>
+                        <td class="flex-center" style="height: 70px;"><i class="bi bi-pencil-fill"></i></td>
+                    </tr>
+                </table>
+                </br>
+                <div class="flex-end">
+                    <button class="tips">
+                        <i class="bi bi-lightbulb"></i>
+                        Dicas
+                    </button><!--Tips=Dicas-->
+                </div>
+            </div>
+        </section> 
+
+        <section class="content-tips">
+            <div class="flex-between">
+                <h4> <i class="bi bi-lightbulb"></i> Dicas Importantes</h4>
+                <button class="tips">Entendi</button>
+            </div><!--flex-between-->
+            <p><i class="bi bi-caret-right-fill"></i> Aqui você pode cadastrar todos os seus Pets;</p>
+            <p><i class="bi bi-caret-right-fill"></i> Você pode cadastrar quantos Pets forem necessário;</p>
+            <p><i class="bi bi-caret-right-fill"></i> Preencha todas as informações do seu Pet adequadamente para facilitar o atendimento;</p>
+            <p><i class="bi bi-caret-right-fill"></i> Essas informações são muito importantes para quando você precisar fazer algum agendamento de consulta para seus Pets.</p>
+            </br>
+            <h4>Para incluir um Pet novo, faça:</h4>
+            <p><i class="bi bi-caret-right-fill"></i>  Estando na opção [Meus bichinhos];</p>
+            <p><i class="bi bi-caret-right-fill"></i>  Digite os dados preenchendo os campos com atenção especial aos campos obrigatórios assinalados com um (*);</p>
+            <p><i class="bi bi-caret-right-fill"></i>  Clicar no botão [Salvar].
+            </p>
+            </br>
+            <p><i class="bi bi-star-fill"></i> <span>NOTA</span>: O campo RGA (Registro Geral do Animal) é um campo a ser preenchido pelo pessoal do Hospital Veterinário, portanto, não se preocupe com o mesmo.</p>
+            </br>
+            <p><i class="bi bi-star-fill"></i> <span>IMPORTANTE</span>: O campo RGA (Registro Geral do Animal) é um campo a ser preenchido pelo pessoal do Hospital Veterinário, portanto, não se preocupe com o mesmo.</p></p>
+        </section><!--content-tips-->             
+                
+    </main>
+    
+
+</body>
+
+
+</html>
