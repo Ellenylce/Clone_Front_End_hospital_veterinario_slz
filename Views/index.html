@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMV-SLZ</title>
+    <!--Conexão CSS-->
+    <link rel="stylesheet" href="../Css/styles.css">
+    <!--Fim conexão CSS-->
+    <!--boostrap Icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!--Fim Boostrap Icons-->
+
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- FIM Google Icons -->
+
+    <!--tag link- icone das FAQs Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Fim fonte Awesome -->
+
+    <!-- Conexão CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fim conexão CSS -->
+
+     <!-- Conexão Script  -->
+    <script src="../script/script.js" defer></script>
+    <!-- FIM Conexão Script -->
+
+    <!-- OpenStreetMap (OSM) com a Leaflet para map interativos no site -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Script do Leaflet para Mapas OSM -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- FIM OpenStreetMap (OSM) -->
+
+</head>
+
+<body>
+     <!-- Cabeçalho com logo e navegação -->
+     <header class="header-unique">
+        <div class="flex-between flex-alinhado">
+            <img src="../imgs/logo-prefeitura.png" alt="" width="200" height="100">
+            <nav>
+                <ul class="nav-ul flex-center gap-trinta">
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#onde-estamos">Onde Estamos</a></li>
+                </ul>
+            </nav>
+            <a href="login.html">
+                <button class="btn-agend btns flex-center">
+                    <i class="material-symbols-outlined">headset_mic</i>
+                    Central Agendamentos
+                </button>
+            </a>
+        </div> <!--flex-between flex-alinhado-->
+     </header><!--Fim Header-->
+
+      <!----- Seção principal do conteúdo ----->
+     <main class="index-HMV-SLZ">
+        <!-- Section poster -->
+        <section class="poster-HMV">
+
+            <div class="background-poster flex-between">
+                <div class="text-left flex-center flex-column"> 
+                    <p>Nosso hospital veterinário em São Luís oferece atendimento especializado para animais, com profissionais qualificados e equipamentos de última geração para garantir o bem-estar dos nossos pacientes.</p>
+                    <i class="material-symbols-outlined">
+                        pets
+                    </i>     
+                </div><!--text-left-->
+        
+                <div class="slider flex-center">
+                    <div class="imagem-slider ativo">
+                        <img src="../imgs/pet-poster.webp" alt="imagem Hospital Veteriário"  width="700" height="400">
+                    </div><!--imagem-slider-->
+                    <div class="imagem-slider">
+                        <img src="../imgs/hospital-veterinario.jpg" alt="imagem Hospital Veteriário"  width="700" height="400">
+                    </div><!--imagem-slider-->
+                    
+                    <!--- Botões de navegação --->
+                    <button id="anterior" class="navegacao">&#10094;</button>
+                    <button id="proximo" class="navegacao">&#10095;</button>
+                </div> <!--slider-->
+
+                <!-- Texto à Direita -->
+                <div class="text-right flex-column flex-center">
+                        <h1>Primeiro <span>Hospital Veterinário</span> público em <span>São Luís</span></h1>
+                        <div class=" container-info-poster flex-justify">
+                            <div class="flex-justify">
+                                <div>
+                                    <i class="bi bi-building"></i>
+                                    <p>
+                                        Infraestrura Hospitalar Moderna
+                                    </p>
+                                </div>
+                                <div>
+                                    <i class="bi bi-calendar-week">
+                                    </i>
+                                    <p>
+                                        Agendamento Online
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div><!--text-right-->
+
+            </div><!--background-poster-->
+
+        </section><!--Fim Poster-->
+
+        <!-- Section Quem Somos -->
+        <section id="quem-somos">
+            <div class="title-index flex-center">
+                <h1>
+                    QUEM SOMOS
+                </h1>
+            </div>
+             
+            <div class="container-quem-somos">
+                <!-- Coluna Esquerda (Texto) -->
+                <div class="container-left-qm-somos">
+                        <h1>Hospital Municipal Veterinário de São Luís
+                        </h1>
+                    
+                        <p>
+                            Inaugurado pela Prefeitura de São Luís em 22 de junho de 2024, sendo o primeiro hospital público do Maranhão especializado no atendimento de cães e gatos. Localizado na Avenida dos Portugueses, s/n, Vila Isabel (Anjo da Guarda), o hospital atende exclusivamente tutores residentes na capital maranhense.
+                            </br>
+                            </br>
+                            Com capacidade para realizar quase seis mil atendimentos mensais, somos uma referência em saúde animal pública no estado. Contamos com uma equipe altamente qualificada de médicos veterinários e técnicos, comprometidos em oferecer cuidados com ética, profissionalismo e amor.
+                            </br>
+                            </br>
+                            Nossa missão é cuidar dos animais com excelência, dedicação e compromisso social, garantindo o atendimento integral das necessidades de saúde dos pets e contribuindo para o bem-estar animal.
+                        </p>
+                </div> <!--container-left-qm-somos-->
+
+                 <!-- Coluna Direita -->
+                <div class="container-right-qm-somos flex-center">
+                        <img src="../imgs/hospital-veterinario-slz.jpeg" alt="Hospital veterinario" height="350px" width="550px">
+                </div><!--container-right-qm-somos-->
+            </div><!--container-qm-somos-->
+        </section> <!--Fim Quem somos-->
+
+        <!-- Section Serviços -->
+        <section id="servicos" class="servicos">
+            <div class="background-servicos">
+                <div class= "title-index flex-center ">
+                    <h1>NOSSOS SERVIÇOS</h1>
+                </div>
+
+                <div class="container-servicos flex-justify">
+                    <!-- Card Consulta Clínica Geral -->
+                    <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <img src="../imgs/icon-clinico.png" alt="icone Consulta Clinica" width="100" height="100">
+                                <h3 class="title-card">Consulta Clínica Geral</h3>
+                                <p>Avaliação completa com o veterinário.</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Consulta Clínica Geral</h3>
+                                <p>Avaliação inicial feita por um Clínico Geral, que diagnostica e trata diversas condições. Encaminhamentos para especialistas são realizados, se necessário.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                    <!-- Card Consulta Clínica Cirúrgica -->
+                    <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <img src="../imgs/icon-cirurgia.png" alt="icone Consulta Clinica" width="100" height="100">
+                                <h3 class="title-card">Consulta Clínica Cirúrgica</h3>
+                                <p>Procedimentos Cirúrgicos.</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Consulta Clínica Cirúrgica</h3>
+                                <p>Serviço destinado ao diagnóstico e tratamento de condições que exigem cirurgia, como nódulos, tumores, feridas, prolapsos, secreção vaginal e castrações.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                    <!-- Card Dermatologia  -->
+                    <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <img src="../imgs/icon-dermatologia.png" alt="icone Consulta Clinica" width="100" height="100">
+                                <h3 class="title-card">Dermatologia Veterinária</h3>
+                                <p>Cuidado Especializado com Pele e Pelagem</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Dermatologia Veterinária</h3>
+                                <p>Atendimento especializado para saúde da pele e pelagem, com diagnóstico, tratamento e prevenção de condições dermatológicas. Consultas realizadas apenas com encaminhamento do Clínico Geral do HMV-SLZ.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                     <!-- Card Cardiologia  -->
+                     <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <img src="../imgs/icon-cardiologia.png" alt="icone Consulta Clinica" width="100" height="100">
+                                <h3 class="title-card">Cardiologia Veterinária</h3>
+                                <p>Cuidado especializado do Coração do seu pet</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Cardiologia Veterinária</h3>
+                                <p>Cuidado especializado na saúde do coração dos animais, com avaliação, diagnóstico, tratamento e prevenção de condições cardíacas.
+                                Consultas realizadas apenas com encaminhamento do Clínico Geral do HMV-SLZ.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                     <!-- Card Ortopedia Veterinária -->
+                     <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <img src="../imgs/icon-ortopedia.png" alt="icone Consulta Clinica" width="100" height="100">
+                                <h3 class="title-card">Ortopedia Veterinária</h3>
+                                <p> Tratar das condições musculoesqueléticas do seu pet</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Ortopedia Veterinária</h3>
+                                <p>Cuidado especializado para ossos, articulações, músculos e tendões, com avaliação, diagnóstico, tratamento e prevenção de condições ortopédicas.
+                                Consultas realizadas apenas com encaminhamento do Clínico Geral do HMV-SLZ.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                    <!-- Card Consulta Clínica Cirúrgica -->
+                    <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <h3 class="title-card">Exames Laboratoriais de análises clínicas</h3>
+                                <p>Serviços de exames Laboratoriais</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Exames Laboratoriais de Análises Clínicas</h3>
+                                <p>Serviços de exames laboratoriais completos para seu pet, incluindo análises de sangue, urinálise, bioquímica, citologia e cultura. Realizamos também raspado de pele, testes imunológicos, tipagem sanguínea e coagulograma.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                    <!-- Card Dermatologia  -->
+                    <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <h3 class="title-card">Exames de Imagem e Gráficos</h3>
+                                <p>Diagnóstico por Imagem Veterinário</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Exames de Imagem e Gráficos</h3>
+                                <p>Exames de imagem avançados para diagnóstico preciso, como ultrassonografia, raio X, ecocardiograma e eletrocardiograma. Esses exames ajudam a identificar condições internas, problemas cardíacos e distúrbios estruturais, permitindo tratamentos rápidos e eficazes.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+
+                     <!-- Card Cardiologia  -->
+                     <div class="card-servico">
+                        <div class="conteudo-card-servico">
+                            <!-- Conteúdo inicial -->
+                            <div class="conteudo-frente">
+                                <h3 class="title-card">Leitos de Observação e Internação Clínica</h3>
+                                <p>Serviços de cuidados e recuperação</p>
+                            </div><!--conteudo-frente-->
+                            <!-- Conteúdo ao passar o mouse -->
+                            <div class="conteudo-hover">
+                                <h3 class="title-card">Leitos de Observação e Internação Clínica</h3>
+                                <p>Oferecemos leitos adequados para acompanhamento e tratamento de pets em recuperação, com áreas exclusivas para clínica médica, cirúrgica e para doenças infectocontagiosas curáveis. Nosso ambiente seguro e confortável visa proporcionar o melhor cuidado durante o processo de recuperação.</p>
+                            </div><!--conteudo-hover-->
+                        </div><!--p-conteudo-card-servico-->
+                    </div><!--card-servico-->
+                </div><!--container-servicos flex-justify-->
+
+            </div><!--servicos-->
+        </section><!-- Fim Serviços-->
+
+
+        <!------ SECTION FAQS -------->
+        <section id = "faqs" class ="faqs flex-center"> 
+         
+            <div id = "container-faqs" class="flex-column">
+                <h1 id = "titulo-faqs">DÚVIDAS FREQUENTES</h1>
+                <!-- Primeira pergunta -->
+                <div class = "accordion"> <!-- Vai conter o header e body do acordion-->
+                    <button class = "accordion-header">
+                        <span>Como funciona o agendamento?</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i> <!--adicionei tbm a classe "arrow(seta) no icone da seta"-->
+                    </button>
+                    <div class = "accordion-body">
+                        <p>
+                            Encontre as vagas disponíveis no site da Central de Agendamento HVM-SLZ!
+                            </br>
+                            A Central de Agendamento atualiza diariamente as vagas ofertadas pelo HVM-SLZ, exibindo as opções disponíveis para os próximos 7 dias, incluindo a quantidade de vagas restantes.
+                            </br>
+                            Caso as vagas estejam esgotadas, não se preocupe! Novas vagas serão liberadas à meia-noite (00h00) do dia seguinte, garantindo oportunidades para os dias seguintes.
+                            </br>
+                            Atenção: É permitido apenas 1 agendamento por CPF para a mesma data. Planeje-se e garanta sua vaga!
+                        </p>
+                    </div><!--accordion-body-->
+                </div><!--accordion-->
+
+              <!-- Segunda Pergunta -->
+                <div class = "accordion"> <!-- Vai conter o header e body do acordion-->
+                    <button class = "accordion-header">
+                        <span>Quem pode agendar?</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i> <!--adicionei tbm a classe "arrow(seta) no icone da seta"-->
+                    </button>
+                    <div class = "accordion-body">
+                        <p>
+                            O Tutor ou Responsável Legal pelo animal, maior de 18 anos, portador de CPF e residente da cidade de São Luís-MA.
+                            OBS: É permitido somente 1 agendamento por CPF para uma mesma data.
+                            OBS: O atendimento dos agendados será dado por ordem de chegada.
+                        </p>
+                    </div><!--accordion-body-->
+                </div><!--accordion---->
+
+              <!-- Terceira pergunta -->
+                <div class = "accordion"> <!-- Vai conter o header e body do acordion-->
+                    <button class = "accordion-header">
+                    <span>Quais documentos levar no dia do atendimento?</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i> <!--adicionei tbm a classe "arrow(seta) no icone da seta"-->
+                    </button>
+                    <div class = "accordion-body">
+                        <p>
+                            Documento de identidade com CPF e comprovante de endereço cadastrado. Todas as informações inseridas no agendamento serão confirmadas na recepção.
+                        </p>
+                    </div><!--accordion-body-->
+                </div><!--accordion-->
+
+              <!-- Quarta pergunta -->
+                <div class = "accordion"> <!-- Vai conter o header e body do acordion-->
+                    <button class = "accordion-header">
+                        <span>Qual o horário de funcionamento:</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i> <!--adicionei tbm a classe "arrow(seta) no icone da seta"-->
+                        </button>
+                        <div class = "accordion-body">
+                            <p>
+                                Segunda a Sexta das 8h às 17h.
+                            </br>
+                                Para atendimentos de Emergência o funcionamento será 24h.
+                            </p>
+                        </div><!--accordion-body-->
+                </div><!--accordion-->
+            </div><!--container-->
+        </section><!--Fim Faqs-->
+  
+        <section id="onde-estamos">
+            <div class="background-onde-estamos flex-column">
+                <div class="title-index flex-center">
+                    <h1>
+                        ONDE ESTAMOS
+                    </h1>
+                </div>
+                <div class="container-onde-estamos flex-between flex-alinhado">
+                    <div id="map" style="width: 40%; height: 350px;"></div><!--map-->
+                    <div class="container-info flex-column">
+                        <!-- <i class="bi bi-geo-alt-fill"></i> -->
+                        <h3>Endereço</h3>
+                        <p>Rua Ceará, s/n, Vila Isabel (Anjo da Guarda) - São Luís-MA</p>
+                        <p>CEP: 65.082-099</p>
+                    </div><!--container-info -->
+                    
+                    <div class="container-info flex-column">
+                        <!-- <i class="bi bi-envelope-at-fill"></i> -->
+                        <h3>Contato</h3>
+                        <p>Email: contato@hospitalveterinarioslz.com.br  </p>
+
+                        <div class="botoes-sociais flex-between">
+                            <a href="https://www.instagram.com/semus.saoluis" target="_blank" class="social-button instagram" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            <a href="https://www.facebook.com/semus.saoluis" target="_blank" class="social-button facebook" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/semus_saoluis" target="_blank" class="social-button twitter" aria-label="Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                          </div>
+                    </div><!--container-info -->
+
+                    <div class="container-info flex-column">
+                        <!-- <i class="bi bi-envelope-at-fill"></i> -->
+                        <h3>Parcerias e Regulamentações</h3>
+                        <p>Secretaria Municipal da Saúde</p>
+                        <p>Sanitária - SVES</p>
+                        <p>Unidade de Vigilância em Zoonoses - UVZ</p>
+                    </div><!--container-info -->
+
+                    
+                </div><!--container-onde-estamos-->
+                
+            </div><!--background-contato-->
+        </section><!--onde estamos-->
+
+
+        <!-- Seção SLIDER de Imagens-->
+         <!-- <section class="slider flex-center">
+            <div class="imagem-slider ativo">
+                <img src="../imgs/hospital-veterinario-slz.jpeg" alt="imagem Hospital Veteriário"  height="400">
+            </div>
+            <div class="imagem-slider">
+                <img src="../imgs/triagem-HMV-slz.jpg" alt="imagem Hospital Veteriário"  height="400">
+            </div>
+            <div class="imagem-slider">
+                <img src="../imgs/recepcao-HMV-slz.jpg" alt="imagem Hospital Veteriário" height="400">
+            </div>
+            -- Botões de navegação --
+            <button id="anterior" class="navegacao">&#10094;</button>
+            <button id="proximo" class="navegacao">&#10095;</button>
+         </section> slider -->
+
+         <!----- Seção Quem Somos ----->
+          <!-- <section id="quem-somos">
+            <div class="title-quem-somos flex-center">
+                <h1>QUEM SOMOS</h1>
+            </div>
+           <div class="container-quem-somos">
+                <div class="flex-center">
+                    <i class="bi bi-bullseye"></i>
+                </div>
+                <div class="flex-center">
+                    <h2>Missão</h2>
+                </div>
+                <div class="flex-center">
+                    <p>Promover a saúde e o bem-estar de cães e gatos da comunidade de São Luís, oferecendo serviços veterinários de alta qualidade, gratuitos e acessíveis, com foco em diagnóstico, prevenção e tratamento. Nossa missão é cuidar dos animais com excelência, dedicação e compromisso social, garantindo o atendimento integral das necessidades de saúde dos pets e contribuindo para o bem-estar animal.</p>
+                </div>
+           </div>
+          </section>quem-somos -->
+     </main>
+</body>
+<footer class="background-footer flex-between">
+    <img src="../imgs/logo-prefeitura.png" alt="Logo hospital veterinario" width="150" height="60">
+    <p>© Copyright 2024 - SIM-Alfred - Todos os Direitos Reservados</p>
+    <img src="../imgs/logo-instituto-transformar.png" alt="Logo hospital veterinario" width="150" height="60">
+</footer>
+</html>

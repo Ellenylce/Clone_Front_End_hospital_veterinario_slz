@@ -31,6 +31,22 @@
     padding:0px;
     box-sizing: border-box;
 }
+
+header {
+    margin-left: 250px;
+    background-color: rgba(162, 185, 190, 0.192);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    font-family: var(--font-family-poppins);
+    color:var(--title);
+}
+
+header i{
+    margin-right: 15px;
+    font-size:35px;
+    cursor:pointer;
+}
+
 .flex-justify-start{
     display:flex;
     justify-content: flex-start;;
@@ -55,6 +71,11 @@
 .flex-alinhado{
     display:flex;
     align-items: center;
+}
+
+.flex-justify{
+    display:flex;
+    justify-content: center;
 }
 
 .flex-between{
@@ -137,17 +158,419 @@ a{
 
 /* ------------------------------------------------------------------------- */
 
-/* ------- PÁGINA CENTRAL DE ATENDIMENTO - ACESS USER -----*/
+/* ------------ INDEX HMV - SLZ ------------- */
+/* barra de navegação */
+header.header-unique{
+    margin:0;
+    background-color: rgba(162, 185, 190, 0.192); 
+}
+header div button.btn-agend{
+    width: 250px;
+    height: 50px;
+    font-size:17px;
+    white-space: nowrap;
+}  
+
+.nav-ul li a{
+    display: inline-block; /* Importante para aplicar o transform */
+    color: var(--btn);
+    cursor: pointer;
+    font-weight: bold;
+    font-size:18px;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.nav-ul li a:hover{
+    color: var(--gray-dark);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* ------ SECTION POSTER INDEX ----- */
+section div.background-poster{
+    width: 100%;
+    height: 360px;
+    background: linear-gradient(to bottom, #007bff, #28a745); /* Azul para verde */
+}
+
+section div div.text-left{
+width: 25%;
+/* height: 100%; */
+text-align: center;
+margin-left: 20px;
+
+}
+
+section div div.text-left p{
+    font-size: 1.0rem;
+    color: rgba(255, 255, 255, 0.527);
+    margin-bottom: 10px;
+    margin:40px;
+}
+
+section div div.text-left i{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 2.5rem;
+}
+
+section div div.slider{
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+section div div div.imagem-slider{
+    display: none;
+}
+
+section div div div.imagem-slider.ativo {
+    display: block;
+}
+
+section div div button.navegacao{
+    position:absolute;
+    top: 50%;
+    right: 90%;
+    left: 90%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: rgba(5, 145, 163, 0); 
+    color: rgba(255, 255, 255, 0.11);
+    padding:10px;
+    cursor:pointer;
+    font-size: 30px;
+    border-radius: 80%;
+}
+
+section div div button.navegacao:hover{
+    color: var(--btn);
+    transition: transform 0.3s ease-in-out, top 0s;
+}
+
+#anterior {
+    left: 10px;
+}
+
+#proximo {
+    right: 10px;
+}
+
+section div div.text-right {
+    width: 60%; /* Largura ajustável */
+    padding: 10px;
+    text-align: center;
+    color:#f8f9faa4;
+    font-size: 18px;
+}
+
+section div div.text-right div {
+    gap:50px;
+}
+
+section div div.text-right h1 {
+    font-size: 2.1rem;
+    color: var(--light);
+    margin-bottom: 10px;
+}
+
+section div div.text-right span {
+    color: var(--yellow);
+}
+
+section div div div.container-info-poster{
+    margin-top:40px;
+}
+
+section div div div.container-info-poster i{
+    font-size: 40px;
+    color: rgba(209, 217, 228, 0.473);
+}
+
+/* ------- SECTION QUEM SOMOS ------ */
+.title-index{
+    margin: 50px;
+    color: var(--btn);
+}
+section div.container-quem-somos{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    gap:100px;
+    padding-left:200px;
+    padding-right:200px;
+    padding-bottom: 50px;
+}
+
+section div div.container-left-qm-somos{
+    width: 60%;
+    height: 100%;
+    font-size: 20px;
+    text-align: justify;
+}
+section div div.container-left-qm-somos h1{
+    margin-bottom: 35px;
+    color: var(--gray-dark);
+}
+
+section div div.container-right-qm-somos{
+    width: 40%;
+    height: 100%;   
+}
+
+section div div.container-right-qm-somos img{
+    border-radius:10px;   
+}
+
+
+
+
+/* --------SECTION SERVIÇOS------ */
+section div.background-servicos{
+    background: linear-gradient(to top, #043c79, #036b1b); /* Azul para verde */
+    width: 100%;
+    height: auto;
+    padding:20px;
+    margin: 0 auto;
+}
+
+.container-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 20px;
+    margin: 50px;
+}
+
+.title-card{
+    margin:20px;
+    color: var(--btn);
+}
+
+/* Card */
+.card-servico {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5f3;
+    transition: background-color 0.5s ease;
+    
+}
+
+.card-servico:hover {
+    background-color: #08b6c200; /* Cor de fundo no hover */
+}
+
+/* Conteúdo geral */
+.conteudo-card-servico {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Conteúdo da frente */
+.conteudo-frente, .conteudo-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.9s ease, opacity 0.9s ease;
+}
+
+/* Conteúdo padrão */
+.conteudo-frente {
+    z-index: 2;
+    background-color: transparent;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 1.5s ease, opacity 1.5s ease; /* Transição mais lenta */
+}
+
+.card-servico:hover .conteudo-frente {
+    transform: translateY(100%); /* Sai para baixo no hover */
+    opacity: 0; /* Esconde completamente */
+}
+
+/* Conteúdo ao passar o mouse */
+.conteudo-hover {
+    color: #fff;
+    background-color: #007bff11;
+    z-index: 1;
+    transform: translateY(-100%); /* Inicialmente fora da tela acima */
+    opacity: 0; /* Invisível */
+    transition: transform 1.5s ease, opacity 1.5s ease; /* Transição mais lenta */
+}
+
+.card-servico:hover .conteudo-hover {
+    transform: translateY(0); /* Entra na tela de cima para baixo */
+    opacity: 1; /* Torna visível */
+}
+
+/*---------------- PERGUNTAS FREQUENTES ------------*/
+/* Estilo para o contêiner principal dos FAQs */
+  section.faqs{
+    min-height: 550px; 
+  }
+
+/* Estilo para o contêiner interno dos FAQs */
+section div#container-faqs{
+    gap:10px; /* Define o espaçamento entre os itens*/
+    width: 1100px;
+}
+
+/* Estilo para o título da seção de FAQs */
+section div h1#titulo-faqs{
+    color: var(--btn);
+    text-align:center;
+    margin-bottom:50px;
+}
+  
+/* Estilo para cada item de acordeão */
+section div div.accordion{
+    border-bottom: 2px solid var(--blue); /* Adiciona uma borda inferior vermelha de 2 pixels */
+    background-color: rgba(8, 136, 211, 0); /* Define a cor de fundo como branca */
+    border-radius:8px;
+    padding:17px;
+    cursor: pointer;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.1); /* Adiciona uma sombra sutil ao redor do acordeão */
+}
+
+  /* Estilo para o cabeçalho do acordeão */
+section div div button.accordion-header{
+    font-weight: bold; /*Negrito*/
+    color:var(--dark);
+    width: 100%; /* O cabeçalho ocupa a largura total do contêiner do acordeão */
+    border:none; /* Remove qualquer borda */
+    background-color:transparent; /* Define o fundo como transparente */
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui o espaço entre os itens(Fica com um espaço entre a pergunta e o icone*/
+    cursor:pointer;
+    font-size:18px;
+}
+  
+  /* Estilo para o texto no cabeçalho do acordeão */
+section div div button.accordion-header span{
+  max-width: 100%; /* Garante que o texto não exceda a largura do cabeçalho */
+  white-space: nowrap; /* Impede a quebra de linha no texto */
+  overflow:hidden; /* Oculta o texto que ultrapassa o limite do contêiner*/
+  text-overflow: ellipsis; /* Adiciona reticências (...) para indicar texto cortado */
+}
+  
+  /* Estilo para o corpo do acordeão */
+section div div div.accordion-body{
+    color: var(--gray-dark);
+    opacity:0; /* Define a opacidade como 0 (oculto) por padrão (O texto desaparece)*/
+    font-size:18px;
+    height: 0; /* Define a altura como 0 (oculto) por padrão (body fica sem altura*/
+    overflow:hidden;  /* Oculta o conteúdo que excede a altura do corpo */
+    transition: opacity 0.5s; /* Adiciona uma transição suave para a opacidade */
+  }
+  
+  /* Estilo para o corpo do acordeão quando está ativo */
+section div div div.accordion-body.active{
+    height: 100%; /* Define a altura como 100% para mostrar o conteúdo - o conteudo aparece*/
+    opacity:1; /* Define a opacidade como 1 (visível) - o texto fica visivel*/
+    padding: 5px 0px;
+    text-align: justify;
+  }
+  
+  /* Estilo para a seta do acordeão */
+  .arrow{
+    transition: transform .2s linear; /* Adiciona uma transição suave para a transformação */
+  }
+  
+  /* Se o acordeão tiver a classe "active", a seta será girada 180 graus */
+  .accordion:has(.active) .arrow{
+    transform: rotate(180deg); /* Gira a seta em 180 graus */
+  }
+  
+
+/* ----------- onde estamos -------- */
+section div.background-onde-estamos{
+    background: linear-gradient(to bottom, #034891, #0d972d); /* Azul para verde */
+    width: 100%;
+    height: auto;
+    padding:20px;
+    display:flex;
+    align-items: center;
+}
+section div div.container-onde-estamos{
+    width: 90%;
+}
+
+section div div#map{
+    background-color: #17a3b85b;
+    border-radius: 20px;
+    box-shadow:10px 10px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+       
+}
+
+section div div div.container-info{
+    width: 300px;
+    height: 200px;
+    color: rgba(243, 243, 243, 0.582);
+    line-height: 1.5; 
+}
+
+section div div div.container-info i{
+    font-size: 30px;
+    color: var(--teal);
+    /* margin: 0 auto; */
+}
+
+section div div div.container-info h3{
+    color: var(--white);
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+section div div div div.botoes-sociais{
+    width: 50%;
+    gap:5px;
+   
+}
+
+/* ----------RODAPÉ --------- */
+footer.background-footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light);
+    padding: 30px;
+}
+
+
+
+/* ------- PÁGINA CENTRAL DE ATENDIMENTO - página LOGIN -----*/
 section.main-container-agend{
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction:column;
-    height: 100vh;
-    
+    height: 100vh; 
+    width: 100%;
 }
 
-section.main-container-agend div.acess-user{
+section.main-container-agend p{
+    margin-bottom:30px;
+    font-family: var(--font-family-poppins);
+    font-size:20px;
+}
+
+section div.acess-user{
     border-radius:20px;
     background-color:var(--white);
     padding:12px;
@@ -158,14 +581,9 @@ section.main-container-agend div.acess-user{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);   
 }
 
-.main-container-agend p{
-    margin-bottom:20px;
-    font-family: var(--font-family-poppins);
-    font-size:20px;
-    
 
-}
-div.acess-user label{
+
+section div.acess-user label{
     /* align-self: flex-start; */
     font-family: var(--font-family-poppins);
 }
@@ -268,24 +686,6 @@ nav ul .menu-item i{
     justify-content:space-between;
 }
 
-/* ---- HEADER ----*/
-header {
-    margin-left: 250px;
-    /* background-color: #fefeff; */
-    background-color: rgba(162, 185, 190, 0.192);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    font-family: var(--font-family-poppins);
-    color:var(--title);
-
-}
-
-header i{
-    margin-right: 15px;
-    font-size:35px;
-    cursor:pointer;
-}
-
 
 /* ------- CONTEUDO PRINCIPAL -------- */
 main.content {
@@ -373,8 +773,7 @@ main.content {
     height: 20px;
 
 }
-
-/* -------- FIM SECTION ABANDONO DE ANIMAIS------- */
+/* -------- FIM Section ABANDONO DE ANIMAIS------- */
 
 
 /* ----- Coluna Direita ----- */
@@ -416,7 +815,8 @@ main.content {
     
 }
 
-/* -----PÁGINA: MEUS DADOS (TUTOR)------ */
+
+/* ---------PÁGINA: MEUS DADOS (TUTOR)--------- */
 .main-tutor{
     margin-left: 260px; 
     min-height: calc(100vh - 80px); /* Para preencher a tela e evitar rolagem desnecessária */
